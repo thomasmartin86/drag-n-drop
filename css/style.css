@@ -1,0 +1,76 @@
+body {
+  background: darkcyan;
+}
+
+.head-text {
+  text-align: center;
+  margin: auto;
+  font-size: 3rem;
+  color: #333;
+  background: #f4f4f4;
+  width: 50%;
+  border: #444 3px solid;
+  border-radius: 3px;
+}
+
+.container {
+  margin-top: 25vh;
+  text-align: center;
+}
+
+/* using random image from unsplash */
+.fill {
+  background-image: url('http://source.unsplash.com/random/200x200');
+  position: relative;
+  height: 200px;
+  width: 200px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.empty {
+  display: inline-block;
+  height: 210px;
+  width: 210px;
+  margin: auto;
+  border: 2.5 #333 solid;
+  background: white;
+}
+
+.hold {
+  border: solid #ccc 4px;
+}
+
+.hovered {
+  background: #f4f4f4;
+  border-style: dashed;
+}
+
+.invisible {
+  display: none;
+}
+
+.grid {
+  padding: 2rem;
+  margin: auto;
+  display: grid;
+  height: 250px;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-column-gap: 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 2fr);
+    grid-row-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+  }
+}
